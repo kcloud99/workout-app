@@ -1,0 +1,11 @@
+.App-Container {
+
+}
+
+.Workout-container {
+  float: left;
+}
+
+.Exercise-container {
+  float: right;
+}

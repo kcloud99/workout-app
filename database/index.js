@@ -18,25 +18,26 @@ let exerciseSchema = mongoose.Schema({
 
 let Exercise = mongoose.model('Exercise', exerciseSchema);
 
-let userSchema = mongoose.Schema({
-  id: {type: Number, unique: true},
-  username: String,
-  password: String,
-  //workouts: [Number]
-});
-
-let User = mongoose.model('User', userSchema);
-
 let workoutSchema = mongoose.Schema({
   id: {type: Number, unique: true},
   name: String,
-  //exercises: [Number],
+  exercises: [{type: mongoose.Schema.Types.ObjectId, ref: 'Exercise'}]
   //createdAt: Timestamp
 });
 
 let Workout = mongoose.model('Workout', workoutSchema);
 
-let save = (exercise) => {
+let userSchema = mongoose.Schema({
+  id: {type: Number, unique: true},
+  username: String,
+  password: String,
+  _workouts: [{type: mongoose.Schema.Types.ObjectId, ref: 'Workout'}]
+});
+
+let User = mongoose.model('User', userSchema);
+
+
+let saveExercise = (exercise) => {
   let data = {
     id: exercise.id,
     name: exercise.name,
@@ -60,6 +61,40 @@ let save = (exercise) => {
   });
 };
 
+let saveWorkout = (workout) => {
+  let data = {
+    id: {type: Number, unique: true},
+    name: String,
+    exercises: [{type: Schema.Types.ObjectId, ref: 'Exercise'}],
+    //createdAt: Timestamp
+  };
+  
+  Exercise.create(data, function(err, exercise_instance) {
+    if (err) {
+      console.log('Error saving to db', err);
+    } else {
+      console.log('Save successful', exercise_instance);
+    }
+  });
+};
+
+let saveUser = (exercise) => {
+  let data = {
+    id: {type: Number, unique: true},
+    username: String,
+    password: String,
+    _workouts: [{type: Schema.Types.ObjectId, ref: 'Workout'}]
+  };
+  
+  Exercise.create(data, function(err, exercise_instance) {
+    if (err) {
+      console.log('Error saving to db', err);
+    } else {
+      console.log('Save successful', exercise_instance);
+    }
+  });
+};
+
 let getExercisesFromDb = () => {
   Exercise.
   find().
@@ -67,8 +102,15 @@ let getExercisesFromDb = () => {
   exec(callback)
 };
 
-module.exports.save = save;
+
+
+
+module.exports.Exercise = Exercise;
+module.exports.saveExercise = saveExercise;
+module.exports.saveWorkout = saveWorkout;
+module.exports.saveUser = saveUser;
 module.exports.getExercisesFromDb = getExercisesFromDb;
+
 
 
 

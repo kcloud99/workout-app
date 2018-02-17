@@ -1,14 +1,4 @@
 [
-
-  /*
-    Legs: 1
-    Back: 2
-    Chest: 3
-    Arms/Shoulders: 4
-    Plyos: 5
-  */
-
-  // LEGS ID: 1 ********************************************
   {
     "id": 1,
     "name": "Squat",
@@ -87,8 +77,6 @@
     "reps": null,
     "weight": null
   },
-
-  // BACK ID: 2 ********************************************
   {
     "id": 7,
     "name": "Pull Up",
@@ -167,8 +155,6 @@
     "reps": null,
     "weight": null
   },
-
-  // CHEST ID: 3 ********************************************
   {
     "id": 13,
     "name": "Bench Press",
@@ -247,8 +233,6 @@
     "reps": null,
     "weight": null
   },
-
-  // Arms/Shoulders ID: 4 ********************************************
   {
     "id": 19,
     "name": "Dumbbell Curls",
@@ -327,8 +311,6 @@
     "reps": null,
     "weight": null
   },
-
-  // PLYOS ********************************************
   {
     "id": 25,
     "name": "Squat Jump",
@@ -407,5 +389,4 @@
     "reps": null,
     "weight": null
   }
-
 ]
