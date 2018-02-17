@@ -1,0 +1,411 @@
+[
+
+  /*
+    Legs: 1
+    Back: 2
+    Chest: 3
+    Arms/Shoulders: 4
+    Plyos: 5
+  */
+
+  // LEGS ID: 1 ********************************************
+  {
+    "id": 1,
+    "name": "Squat",
+    "description": "A compound exercise, done with or without weight.  Stand with your feet shoulder width apart, keep your back straight and head and chest high.  Slowly sit back until your thighs are parallel to the ground, then stand back up",
+    "category": {
+      "id": 1,
+      "name": "Legs"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 2,
+    "name": "Deadlift",
+    "description": "An exercise where a barbell or other weight is lifted off the ground to hip level.  Grab the bar just wider than shoulder width apart, and lower your butt.  While keeping your head and chest high, press down through your heels while extending your legs and hips until the your legs are almost straight (do not lock). Slowly place bar back on the ground",
+    "category": {
+      "id": 1,
+      "name": "Legs"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 3,
+    "name": "Lunge",
+    "description": "A single leg exercise done with or without weight.  Stand straight with good posture.  Take a large step forward, and while keeping your upper body straight with your head high, bend your front leg to 90 degrees or until your back knee touches the ground.  Push back up to the starting position and switch legs",
+    "category": {
+      "id": 1,
+      "name": "Legs"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 4,
+    "name": "Step-up",
+    "description": "Done with or without weights, stand facing a box or other object to step onto.  Step up with one leg onto the box, and drive your back knee up into the air until your planted leg is almost straight. Step back down and repeat with the other leg",
+    "category": {
+      "id": 1,
+      "name": "Legs"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 5,
+    "name": "Hamstring Curl",
+    "description": "Lay on your back with your legs up on a swiss ball. Place your hands out perpendicular to the sides and flat on the ground for balance. With you heels on the swiss ball, curl your heels back towards your body while raising your back off the ground.  Keep your shoulders planted and body flat, and clench your buttocks",
+    "category": {
+      "id": 1,
+      "name": "Legs"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 6,
+    "name": "Calf Raise",
+    "description": "Stand with your toes up on an object about 6 inches high.  Slowly lower your heels as far as possible while staying balanced on the balls of your feet.  Press firmly through your toes and raise your body up without bending your knees",
+    "category": {
+      "id": 1,
+      "name": "Legs"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+
+  // BACK ID: 2 ********************************************
+  {
+    "id": 7,
+    "name": "Pull Up",
+    "description": "Grab an overhead bar just wider than shoulder width apart. Keeping your core tight and your legs slightly in front of you, pull your chest up towards the bar forcefully. Pause at the top, then slowly lower yourself back down",
+    "category": {
+      "id": 2,
+      "name": "Back"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 8,
+    "name": "Bent Over Row",
+    "description": "Set a barbell about knee height off the ground. Grab the bar with an overhand grip about shoulder width apart. Bend over by pressing your hips back, keeping your core tight and your back flat.  Pull your elbows back, keeping them tight on your side, until the bar touches your stomach, then lower back down",
+    "category": {
+      "id": 2,
+      "name": "Back"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 9,
+    "name": "Back Fly",
+    "description": "Grab two dumbbells and bend over like a bent over row. Let your arms hang in front of you. By squeezing your shoulder blades together in the middle of your back, raise the dumbbells out to your sides.",
+    "category": {
+      "id": 2,
+      "name": "Back"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 10,
+    "name": "Close-grip Cable Row",
+    "description": "Sit tall facing a cable station with a close-grip handle attached. While keeping your core tight and chest hight, pull your elbows back behind you, and bring the handle to your stomach.  ",
+    "category": {
+      "id": 2,
+      "name": "Back"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 11,
+    "name": "Lat pulldown",
+    "description": "Sit at a pulldown station and grab the bar wider than shoulder width apart. While sitting very tall, bring the bar straight down in front of your face. Focus on squeezing your lats as you pull straight down",
+    "category": {
+      "id": 2,
+      "name": "Back"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 12,
+    "name": "Single-arm Bent Over Row",
+    "description": "Grab a single dumbbell, and place it next to a bench.  Place your left hand on the top of the bench and your left knee on the lower part of the bench. With your right leg out to the side for balance, grab the dumbbell off the floor with your right hand. With your back flat, pull the dumbbell up to your side, and slowly lower it back down. Do a number of reps and repeat on the other side",
+    "category": {
+      "id": 2,
+      "name": "Back"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+
+  // CHEST ID: 3 ********************************************
+  {
+    "id": 13,
+    "name": "Bench Press",
+    "description": "Lie on your back on a bench with your hands on the bar about shoulder width apart. Keeping your body tight, and your feet planted firmly on the ground, lower the bar to your chest in a controlled manner. Explosively press the bar up off your chest",
+    "category": {
+      "id": 3,
+      "name": "Chest"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 14,
+    "name": "Chest Fly",
+    "description": "Lie on your back on a bench with a dumbbell in each hand. With your arms up in the air above your chest, and slightly bent, slowly lower the dumbbells out to each side of you until you feel a slight pull in your chest.  Raise the weight back above you by squeezing your pec muscles together",
+    "category": {
+      "id": 3,
+      "name": "Chest"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 15,
+    "name": "Dip",
+    "description": "Grab two parallel bars and extend your arms so you are holding yourself up. Lean forward while keeping your body tight, lower yourself down by bending your arms and keeping your elbows tight to your body. Forcefully press yourself back up till your arms are straight",
+    "category": {
+      "id": 3,
+      "name": "Chest"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 16,
+    "name": "Skull Crushers",
+    "description": "Lay back on a bench with a bar in your hands straight above your head. While keeping your arms semi-straight lower the bar backwards over your head until you feel a pull in your chest.  Using your lower pecs and core, pull the bar back up over your head",
+    "category": {
+      "id": 3,
+      "name": "Chest"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 17,
+    "name": "Incline dumbbell Press",
+    "description": "Lay on a bench at about a 30 degree angle, with a dumbbell in either hand. Starting with the weights at pec high, and your feet flat on the floor, press your arms straight up into the air. Slowly lower the weight back to your chest",
+    "category": {
+      "id": 3,
+      "name": "Chest"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 18,
+    "name": "Basic Push Up",
+    "description": "Face the floor with a straight and tight body and your hands just inside shoulder width apart. Press straight down into the floor to raise your chest up off the ground. Slowly lower yourself back down until your chest almost touches the floor.",
+    "category": {
+      "id": 3,
+      "name": "Chest"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+
+  // Arms/Shoulders ID: 4 ********************************************
+  {
+    "id": 19,
+    "name": "Dumbbell Curls",
+    "description": "With a dumbbell in each arm, either stand or sit with a straight back and tight core.  Focusing just on your biceps, curl the weight up towards your upper arm, while keeping your palm facing upwards",
+    "category": {
+      "id": 4,
+      "name": "Arms/Shoulders"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 20,
+    "name": "Shoulder Press",
+    "description": "With either dumbbells or a barbell, maneuver the weight above your head. Press straight up forcefully, extending your shoulders and arms, then lower back down slowly",
+    "category": {
+      "id": 4,
+      "name": "Arms/Shoulders"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 21,
+    "name": "Lateral Raise",
+    "description": "Holding dumbbells in either arm, raise the weights out to your side until your arms are perpendicular to the floor. Slowly lower them back to your side",
+    "category": {
+      "id": 4,
+      "name": "Arms/Shoulders"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 22,
+    "name": "Tricep Pressdowns",
+    "description": "Face a cable pulldown station, and grab your choice of handle attached to the cable. Keeping your arms tight to your side, and only bending your arms at the elbows, pull/press the cable down until it touches your upper legs. Slowly raise the weight back up.",
+    "category": {
+      "id": 4,
+      "name": "Arms/Shoulders"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 23,
+    "name": "Hammer Curl",
+    "description": "Just like a normal curl, except you are grabbing the dumbbells and holding them straight up and down with your palms facing inwards instead of up.",
+    "category": {
+      "id": 4,
+      "name": "Arms/Shoulders"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 24,
+    "name": "Overhead Tricep Raise",
+    "description": "Grab some weight and place it straight over your head, either sitting or standing with a flat and tight core. Just bending at the elbows, slowly lower the weight backwards until it is touching your upper back, then reverse course until the weight is back above your head",
+    "category": {
+      "id": 4,
+      "name": "Arms/Shoulders"
+    },
+    "type": "isolation",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+
+  // PLYOS ********************************************
+  {
+    "id": 25,
+    "name": "Squat Jump",
+    "description": "With feet shoulder width apart, slightly lower your butt until your knees form approximately a 45 degree angle. Explode upwards through the balls of your feet, full extending your entire body, and launch yourself up in the air. Land softly on the balls of your feet",
+    "category": {
+      "id": 5,
+      "name": "Plyometrics"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 26,
+    "name": "Clapping Push Up",
+    "description": "Get in pushup position, with your body flat and your hands shoulder width apart. Lower your chest to the ground, and explode upwards by pressing firmly into the ground. As your chest rises and hands leave the ground, clap your hands together, and land softly.",
+    "category": {
+      "id": 5,
+      "name": "Plyometrics"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 27,
+    "name": "Clapping Pull Up",
+    "description": "Start by hanging on a bar with your hands shoulder width apart. Pull your chest forcefully up towards the bar. As you reach the top, let go of the bar and clap your hands. Grab the bar again, and control your descent",
+    "category": {
+      "id": 5,
+      "name": "Plyometrics"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 28,
+    "name": "Burpee",
+    "description": "Start in pushup position. Lower your chest to the ground and press back up. When you finish the pushup, pull your feet up under your chest and stand up. Jump up into the air, and land softly on the balls of your feet. Drop back down into pushup position",
+    "category": {
+      "id": 5,
+      "name": "Plyometrics"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 29,
+    "name": "Quick Steps",
+    "description": "Stand in front of a box or bench about knee height. Quickly bring one foot up to the top of the object, and tap your toes on it. Quickly switch feet and tap the top of the box with your other foot, repeat",
+    "category": {
+      "id": 5,
+      "name": "Plyometrics"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  },
+  {
+    "id": 30,
+    "name": "Sprints",
+    "description": "Get into sprint position, with your feet split, and your weight on your front foot, knee bent, and leaning forward. Explode off your front foot, while driving your back knee up and forward. Pump your arms forcefully as you run, and make sure to drive your knee up with each step",
+    "category": {
+      "id": 5,
+      "name": "Plyometrics"
+    },
+    "type": "compound",
+    "sets": null,
+    "reps": null,
+    "weight": null
+  }
+
+]
