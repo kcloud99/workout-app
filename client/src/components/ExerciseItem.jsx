@@ -1,12 +1,15 @@
 import React from 'react';
 
-var ExerciseItem = (props) => (
+const ExerciseItem = (props) => (
   <div className="Exercise-Item">
-    <h4 className="Exercise-title">{props.exercise}</h4>
-    <p>Description Goes Here</p>
+  <hr />
+    <h4 className="Exercise-title">{props.exercise.name}</h4>
+    <p>{props.exercise.description}</p>
     <div>
-    <span>Category Name</span>
-    <span>Exercise Type</span>
+    <span><b>Category:</b> {props.exercise.category.name}</span>
+    <span>  ||  </span>
+    <span><b>Exercise Type:</b> {props.exercise.type}</span>
+    <hr />
     </div>
   </div>
 );

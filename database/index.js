@@ -95,11 +95,10 @@ let saveUser = (exercise) => {
   });
 };
 
-let getExercisesFromDb = () => {
+let getExercisesFromDb = (callback) => {
   Exercise.
   find().
-  sort({category: {id: -1}}).
-  exec(callback)
+  exec(callback);
 };
 
 
