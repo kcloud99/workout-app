@@ -10,32 +10,70 @@ class App extends React.Component {
     super(props);
     this.state = {
       exercises: [],
-      workout:[]
+      workout:[],
+      username: ''
     }
   }
 
-  componentWillMount () {
+
+  componentDidMount () {
     fetch('/exercises')
     .then(exercises => exercises.json())
     .then((exercises) => this.setState({exercises}));
   }
 
   addNewExercise (newExercise) {
-    let thisState = this.state.bind(this);
-    fetch('/exercise', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(thisState.newExercise)
-    })
+    console.log(JSON.stringify(newExercise), ' was added');
+    //let thisState = this.state.bind(this);
+    $.post('/exercise', JSON.stringify(newExercise), function(data) {
+      console.log(data.name);
+      // TODO
+      // UPDATE EXERCISE LIST RENDERED ON PAGE
+    });
+  }
+
+  handleSignup (e) {
+    this.setState({
+      username: e.target.value
+    });
+  }
+
+  handleLogin (e) {
+    this.setState({
+      username: e.target.value
+    });
+  }
+
+  addUser () {
+    // TODO: POST USERNAME TO DATABASE
+  }
+  login () {
+    // TODO: GET SAVED WORKOUTS FROM DATABASE
   }
 
   render() {
     return(
       <div className="App">
-        <AddExercise onAdd={this.addNewExercise.bind(this)} />
+        <div className="header">
+          <label>
+            Signup:
+            <input name="signup" value={this.state.username} onChange={this.handleSignup} />
+            <input type="button" value="GO" onClick={this.addUser} />
+          </label>
+          <br />
+          or
+          <br />
+          <label>
+            Login:
+            <input name="login" value={this.state.username} onChange={this.handleLogin} />
+            <input type="button" value="GO" onClick={this.login} />
+          </label>
+        <br />
+        <hr />
+        <hr />
+        </div>
+        <AddExercise className="add-exercise" onAdd={this.addNewExercise.bind(this)} />
+        <br />
         <hr />
         <hr />
         <div className="Workout-container">

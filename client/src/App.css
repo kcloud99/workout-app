@@ -1,11 +1,3 @@
-.App-Container {
-
-}
-
-.Workout-container {
-  float: left;
-}
-
-.Exercise-container {
-  float: right;
+.add-exercise {
+  border: 1px solid red;
 }
