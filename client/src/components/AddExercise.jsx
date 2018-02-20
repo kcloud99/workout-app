@@ -6,7 +6,9 @@ class AddExercise extends React.Component {
     this.state = {
       name: '',
       description: '',
-      category: '',
+      category: {
+        name: ''
+      },
       type: ''
     };
     this.handleName = this.handleName.bind(this);
@@ -28,7 +30,9 @@ class AddExercise extends React.Component {
   }
   handleCategory (e) {
     this.setState({
-      category: e.target.value
+      category: {
+        name: e.target.value
+      }
     });
   }
   handleType (e) {
@@ -77,7 +81,7 @@ class AddExercise extends React.Component {
           <span>  </span>
           <label>
             Category: 
-            <select name="category" value={this.state.category} onChange={this.handleCategory}>
+            <select name="category" value={this.state.category.name} onChange={this.handleCategory}>
               <option value="choose">Choose:</option>
               <option value="Legs">Legs</option>
               <option value="Back">Back</option>

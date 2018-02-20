@@ -21,7 +21,7 @@ let Exercise = mongoose.model('Exercise', exerciseSchema);
 
 // let workoutSchema = mongoose.Schema({
 //   name: String,
-//   exercises: [Schema.Types.ObjectId],
+//   exercises: [{type: mongoose.Schema.Types.ObjectId, ref: 'Exercise'}],
 //   createdAt: {type: Date, default: Date.now}
 // });
 
@@ -38,22 +38,19 @@ let Exercise = mongoose.model('Exercise', exerciseSchema);
 
 
 let saveExercise = (exercise) => {
-  let data = {
-    id: exercise.id,
-    name: exercise.name,
-    description: exercise.description,
-    category: {
-      id: exercise.category.id,
-      name: exercise.category.name
-    },
-    type: exercise.type,
-    sets: exercise.sets,
-    reps: exercise.reps,
-    weight: exercise.weight,
-    createdAt: new Date
-  };
+  console.log('Exercise in save function', exercise);
+  // let data = {
+  //   name: exercise['name'],
+  //   description: exercise['description'],
+  //   category: {
+  //     name: exercise.category
+  //   },
+  //   type: exercise.type,
+  // };
+
+  console.log('Data in save function', exercise);
   
-  Exercise.create(data, function(err, exercise_instance) {
+  Exercise.create(JSON.parse(exercise), function(err, exercise_instance) {
     if (err) {
       console.log('Error saving to db', err);
     } else {
@@ -63,20 +60,20 @@ let saveExercise = (exercise) => {
 };
 
 // let saveWorkout = (workout) => {
-//   let data = {
-//     id: {type: Number, unique: true},
-//     name: String,
-//     exercises: [{type: Schema.Types.ObjectId, ref: 'Exercise'}],
-//     createdAt: new Date
-//   };
-  
-//   Exercise.create(data, function(err, exercise_instance) {
-//     if (err) {
-//       console.log('Error saving to db', err);
-//     } else {
-//       console.log('Save successful', exercise_instance);
-//     }
+//   // let data = {
+//   //   id: {type: Number, unique: true},
+//   //   name: String,
+//   //   exercises: [{type: Schema.Types.ObjectId, ref: 'Exercise'}],
+//   //   createdAt: new Date
+//   // };
+//   let w = new Workout();
+//   w.name = workout.name;
+//   workout.exercises.forEach(exercise => {
+//     w.exercises.push(exercise);
 //   });
+//   w.createdAt = new Date();
+//   console.log('Workout to save: ', w);
+//   w.save();
 // };
 
 // let saveUser = (exercise) => {
@@ -103,6 +100,12 @@ let getExercisesFromDb = (callback) => {
   exec(callback);
 };
 
+// let getWorkoutsFromDb = (callback) => {
+//   Workout.
+//   find().
+//   exec(callback);
+// }
+
 
 
 
@@ -111,6 +114,7 @@ module.exports.saveExercise = saveExercise;
 // module.exports.saveWorkout = saveWorkout;
 // module.exports.saveUser = saveUser;
 module.exports.getExercisesFromDb = getExercisesFromDb;
+// module.exports.getWorkoutsFromDb = getWorkoutsFromDb;
 
 
 

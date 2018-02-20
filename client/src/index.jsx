@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import ExerciseList from './components/ExerciseList.jsx';
 import AddExercise from './components/AddExercise.jsx';
-// import styles from './App.css';
+//import styles from './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class App extends React.Component {
       workout:[],
       username: ''
     }
+
   }
 
 
@@ -24,36 +25,43 @@ class App extends React.Component {
 
   addNewExercise (newExercise) {
     console.log(JSON.stringify(newExercise), ' was added');
-    //let thisState = this.state.bind(this);
+    let thisState = this.setState.bind(this);
     $.post('/exercise', JSON.stringify(newExercise), function(data) {
       console.log(data.name);
+      //thisState.exercises.push(data);
       // TODO
       // UPDATE EXERCISE LIST RENDERED ON PAGE
+    //   fetch('/exercises')
+    //   .then(exercises => exercises.json())
+    //   .then((exercises) => this.setState({exercises}));
     });
   }
 
-  handleSignup (e) {
-    this.setState({
-      username: e.target.value
-    });
-  }
+  // handleSignup (e) {
+  //   this.setState({
+  //     username: e.target.value
+  //   });
+  // }
 
-  handleLogin (e) {
-    this.setState({
-      username: e.target.value
-    });
-  }
+  // handleLogin (e) {
+  //   this.setState({
+  //     username: e.target.value
+  //   });
+  // }
 
-  addUser () {
-    // TODO: POST USERNAME TO DATABASE
-  }
-  login () {
-    // TODO: GET SAVED WORKOUTS FROM DATABASE
-  }
+  // addUser () {
+  //   // TODO: POST USERNAME TO DATABASE
+  // }
+  // login () {
+  //   // TODO: GET SAVED WORKOUTS FROM DATABASE
+  // }
 
   render() {
     return(
       <div className="App">
+        <div className="title">
+          <h1>My <em>(broken)</em> Workout App</h1>
+        </div>
         <div className="header">
           <label>
             Signup:
