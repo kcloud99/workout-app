@@ -1,5 +1,5 @@
 import React from 'react';
-import ExerciseItem from './exerciseItem.jsx';
+import ExerciseItem from './ExerciseItem.jsx';
 
 var ExerciseList = (props) => (
   <div>
