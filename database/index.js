@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 const validator = require('mongoose-unique-validator');
-mongoose.connect('mongodb://localhost/workout');
+var uriString = process.env.MONGODB_URI || 'mongodb://localhost/workout'
+mongoose.connect(uriString);
 
-let exerciseSchema = mongoose.Schema({
-  id: Number,
+const exerciseSchema = mongoose.Schema({
   name: String,
   description: String,
   category: {
